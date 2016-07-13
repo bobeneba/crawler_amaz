@@ -1,0 +1,38 @@
+<connectors>
+    <connector name="kind">
+    <property name="driver">com.mysql.jdbc.Driver</property>
+    <property name="url">jdbc:mysql://localhost:3306/test_2</property>
+    <property name="username">root</property>
+    <property name="password">123456</property>
+    <property name="ddlAutoRun">false</property>
+    <property name="maxThreads">5</property>
+    <property name="entities">com.yks.crawler.SKU</property>
+    </connector>
+     <connector name="allstore">
+    <property name="driver">com.mysql.jdbc.Driver</property>
+    <property name="url">jdbc:mysql://localhost:3306/test_2</property>
+    <property name="username">root</property>
+    <property name="password">123456</property>
+    <property name="ddlAutoRun">true</property>
+    <property name="maxThreads">50</property>
+    <property name="entities">com.yks.allStore.SKU</property>
+    </connector>
+     <connector name="storedetail">
+    <property name="driver">com.mysql.jdbc.Driver</property>
+    <property name="url">jdbc:mysql://localhost:3306/test_2</property>
+    <property name="username">root</property>
+    <property name="password">123456</property>
+    <property name="ddlAutoRun">false</property>
+    <property name="maxThreads">50</property>
+    <property name="entities">com.yks.detailCrawler.SKU</property>
+    </connector>
+    <connector name="allitem">
+    <property name="driver">com.mysql.jdbc.Driver</property>
+    <property name="url">jdbc:mysql://localhost:3306/test_2</property>
+    <property name="username">root</property>
+    <property name="password">123456</property>
+    <property name="ddlAutoRun">false</property>
+    <property name="maxThreads">5</property>
+    <property name="entities">com.yks.allproduct.SKU</property>
+    </connector>
+</connectors>

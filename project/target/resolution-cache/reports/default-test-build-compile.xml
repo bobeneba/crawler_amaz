@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="test-build"
+		revision="0.1-SNAPSHOT"
+		extra-scalaVersion="2.10"
+		extra-sbtVersion="0.13"
+		conf="compile"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20160701204200"/>
+	<dependencies>
+		<module organisation="no.arktekk.sbt" name="aether-deploy">
+			<revision name="0.13" status="release" pubdate="20140617042310" resolver="public" artresolver="public" homepage="http://github.com/arktekk/sbt-aether-deploy/" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="6">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="9100" time="894" location="/Users/taw/.ivy2/cache/scala_2.10/sbt_0.13/no.arktekk.sbt/aether-deploy/ivy-0.13.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/scala_2.10/sbt_0.13/no.arktekk.sbt/aether-deploy/ivy-0.13.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/no/arktekk/sbt/aether-deploy_2.10_0.13/0.13/aether-deploy-0.13.pom"/>
+				<caller organisation="default" name="test-build" conf="compile" rev="0.13" rev-constraint-default="0.13" rev-constraint-dynamic="0.13" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="aether-deploy" type="jar" ext="jar" status="successful" details="" size="114958" time="3141" location="/Users/taw/.ivy2/cache/scala_2.10/sbt_0.13/no.arktekk.sbt/aether-deploy/jars/aether-deploy-0.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/no/arktekk/sbt/aether-deploy_2.10_0.13/0.13/aether-deploy-0.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.0.13" status="release" pubdate="20130510203446" resolver="public" artresolver="public" homepage="http://logback.qos.ch" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="successful" details="" size="11869" time="890" location="/Users/taw/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.0.13.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.0.13.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.pom"/>
+				<caller organisation="no.arktekk.sbt" name="aether-deploy" conf="default, compile, runtime, master" rev="1.0.13" rev-constraint-default="1.0.13" rev-constraint-dynamic="1.0.13" callerrev="0.13"/>
+				<artifacts>
+					<artifact name="logback-classic" type="jar" ext="jar" status="successful" details="" size="264600" time="2387" location="/Users/taw/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.5" status="release" pubdate="20130326045215" resolver="public" artresolver="public" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="successful" details="" size="2689" time="714" location="/Users/taw/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.5.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom"/>
+				<caller organisation="org.slf4j" name="jcl-over-slf4j" conf="compile, runtime" rev="1.6.2" rev-constraint-default="1.6.2" rev-constraint-dynamic="1.6.2" callerrev="1.6.2"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.0.13"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="successful" details="" size="26084" time="698" location="/Users/taw/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.6.2" status="release" pubdate="20110819061308" resolver="public" artresolver="public" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="successful" details="" size="2994" time="716" location="/Users/taw/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.6.2.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.6.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.6.2/slf4j-api-1.6.2.pom"/>
+				<evicted-by rev="1.7.5"/>
+				<caller organisation="org.slf4j" name="jcl-over-slf4j" conf="compile, runtime" rev="1.6.2" rev-constraint-default="1.6.2" rev-constraint-dynamic="1.6.2" callerrev="1.6.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.0.13" status="release" pubdate="20130510203314" resolver="public" artresolver="public" homepage="http://logback.qos.ch" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="successful" details="" size="5015" time="713" location="/Users/taw/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.0.13.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.0.13.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.pom"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.0.13" rev-constraint-default="1.0.13" rev-constraint-dynamic="1.0.13" callerrev="1.0.13"/>
+				<artifacts>
+					<artifact name="logback-core" type="jar" ext="jar" status="successful" details="" size="418870" time="2564" location="/Users/taw/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.aether" name="aether-transport-wagon">
+			<revision name="0.9.0.v20140226" status="release" pubdate="20140227040714" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="3946" time="715" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-transport-wagon/ivy-0.9.0.v20140226.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-transport-wagon/ivy-0.9.0.v20140226.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-transport-wagon/0.9.0.v20140226/aether-transport-wagon-0.9.0.v20140226.pom"/>
+				<caller organisation="no.arktekk.sbt" name="aether-deploy" conf="default, compile, runtime, master" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.13"/>
+				<artifacts>
+					<artifact name="aether-transport-wagon" type="jar" ext="jar" status="successful" details="" size="25563" time="856" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-transport-wagon/jars/aether-transport-wagon-0.9.0.v20140226.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-transport-wagon/0.9.0.v20140226/aether-transport-wagon-0.9.0.v20140226.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven.wagon" name="wagon-provider-api">
+			<revision name="1.0" status="release" pubdate="20110707065748" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1753" time="712" location="/Users/taw/.ivy2/cache/org.apache.maven.wagon/wagon-provider-api/ivy-1.0.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.apache.maven.wagon/wagon-provider-api/ivy-1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0/wagon-provider-api-1.0.pom"/>
+				<caller organisation="org.eclipse.aether" name="aether-transport-wagon" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.9.0.v20140226"/>
+				<artifacts>
+					<artifact name="wagon-provider-api" type="jar" ext="jar" status="successful" details="" size="53186" time="864" location="/Users/taw/.ivy2/cache/org.apache.maven.wagon/wagon-provider-api/jars/wagon-provider-api-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0/wagon-provider-api-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.aether" name="aether-transport-file">
+			<revision name="0.9.0.v20140226" status="release" pubdate="20140227040618" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="3349" time="714" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-transport-file/ivy-0.9.0.v20140226.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-transport-file/ivy-0.9.0.v20140226.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-transport-file/0.9.0.v20140226/aether-transport-file-0.9.0.v20140226.pom"/>
+				<caller organisation="no.arktekk.sbt" name="aether-deploy" conf="default, compile, runtime, master" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.13"/>
+				<artifacts>
+					<artifact name="aether-transport-file" type="jar" ext="jar" status="successful" details="" size="9643" time="691" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-transport-file/jars/aether-transport-file-0.9.0.v20140226.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-transport-file/0.9.0.v20140226/aether-transport-file-0.9.0.v20140226.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.aether" name="aether-transport-http">
+			<revision name="0.9.0.v20140226" status="release" pubdate="20140227040651" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="4482" time="888" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-transport-http/ivy-0.9.0.v20140226.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-transport-http/ivy-0.9.0.v20140226.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-transport-http/0.9.0.v20140226/aether-transport-http-0.9.0.v20140226.pom"/>
+				<caller organisation="no.arktekk.sbt" name="aether-deploy" conf="default, compile, runtime, master" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.13"/>
+				<artifacts>
+					<artifact name="aether-transport-http" type="jar" ext="jar" status="successful" details="" size="35318" time="862" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-transport-http/jars/aether-transport-http-0.9.0.v20140226.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-transport-http/0.9.0.v20140226/aether-transport-http-0.9.0.v20140226.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="jcl-over-slf4j">
+			<revision name="1.6.2" status="release" pubdate="20110819061439" resolver="public" artresolver="public" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="successful" details="" size="2463" time="715" location="/Users/taw/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.6.2.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.6.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.6.2/jcl-over-slf4j-1.6.2.pom"/>
+				<caller organisation="org.eclipse.aether" name="aether-transport-http" conf="compile, runtime" rev="1.6.2" rev-constraint-default="1.6.2" rev-constraint-dynamic="1.6.2" callerrev="0.9.0.v20140226"/>
+				<artifacts>
+					<artifact name="jcl-over-slf4j" type="jar" ext="jar" status="successful" details="" size="17310" time="691" location="/Users/taw/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.6.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.6.2/jcl-over-slf4j-1.6.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpclient">
+			<revision name="4.2.6" status="release" pubdate="20130905021608" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-client" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Apache License" url="LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="5535" time="892" location="/Users/taw/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.2.6.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.2.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.pom"/>
+				<caller organisation="org.eclipse.aether" name="aether-transport-http" conf="compile, runtime" rev="4.2.6" rev-constraint-default="4.2.6" rev-constraint-dynamic="4.2.6" callerrev="0.9.0.v20140226"/>
+				<artifacts>
+					<artifact name="httpclient" type="jar" ext="jar" status="successful" details="" size="435628" time="3748" location="/Users/taw/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.2.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.6" status="release" pubdate="20111203103826" resolver="public" artresolver="public" homepage="http://commons.apache.org/codec/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="11157" time="891" location="/Users/taw/.ivy2/cache/commons-codec/commons-codec/ivy-1.6.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/commons-codec/commons-codec/ivy-1.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="4.2.6"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="successful" details="" size="232771" time="2298" location="/Users/taw/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore">
+			<revision name="4.2.5" status="release" pubdate="20130729231428" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="Apache License" url="LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="4871" time="715" location="/Users/taw/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.2.5.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.2.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="4.2.5" rev-constraint-default="4.2.5" rev-constraint-dynamic="4.2.5" callerrev="4.2.6"/>
+				<artifacts>
+					<artifact name="httpcore" type="jar" ext="jar" status="successful" details="" size="227708" time="2218" location="/Users/taw/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.2.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.aether" name="aether-connector-basic">
+			<revision name="0.9.0.v20140226" status="release" pubdate="20140227040537" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="3368" time="1294" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-connector-basic/ivy-0.9.0.v20140226.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-connector-basic/ivy-0.9.0.v20140226.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-connector-basic/0.9.0.v20140226/aether-connector-basic-0.9.0.v20140226.pom"/>
+				<caller organisation="no.arktekk.sbt" name="aether-deploy" conf="default, compile, runtime, master" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.13"/>
+				<artifacts>
+					<artifact name="aether-connector-basic" type="jar" ext="jar" status="successful" details="" size="37547" time="863" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-connector-basic/jars/aether-connector-basic-0.9.0.v20140226.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-connector-basic/0.9.0.v20140226/aether-connector-basic-0.9.0.v20140226.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.aether" name="aether-impl">
+			<revision name="0.9.0.v20140226" status="release" pubdate="20140227040506" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="3760" time="903" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-impl/ivy-0.9.0.v20140226.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-impl/ivy-0.9.0.v20140226.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-impl/0.9.0.v20140226/aether-impl-0.9.0.v20140226.pom"/>
+				<caller organisation="no.arktekk.sbt" name="aether-deploy" conf="default, compile, runtime, master" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.13"/>
+				<artifacts>
+					<artifact name="aether-impl" type="jar" ext="jar" status="successful" details="" size="175173" time="2057" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-impl/jars/aether-impl-0.9.0.v20140226.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-impl/0.9.0.v20140226/aether-impl-0.9.0.v20140226.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.aether" name="aether-util">
+			<revision name="0.9.0.v20140226" status="release" pubdate="20140227040425" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="2194" time="717" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-util/ivy-0.9.0.v20140226.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-util/ivy-0.9.0.v20140226.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-util/0.9.0.v20140226/aether-util-0.9.0.v20140226.pom"/>
+				<caller organisation="org.eclipse.aether" name="aether-transport-file" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<caller organisation="org.eclipse.aether" name="aether-transport-http" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<caller organisation="org.eclipse.aether" name="aether-connector-basic" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<caller organisation="org.eclipse.aether" name="aether-impl" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<caller organisation="org.eclipse.aether" name="aether-transport-wagon" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<artifacts>
+					<artifact name="aether-util" type="jar" ext="jar" status="successful" details="" size="145832" time="1706" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-util/jars/aether-util-0.9.0.v20140226.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-util/0.9.0.v20140226/aether-util-0.9.0.v20140226.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.aether" name="aether-spi">
+			<revision name="0.9.0.v20140226" status="release" pubdate="20140227040326" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="2052" time="715" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-spi/ivy-0.9.0.v20140226.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-spi/ivy-0.9.0.v20140226.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-spi/0.9.0.v20140226/aether-spi-0.9.0.v20140226.pom"/>
+				<caller organisation="org.eclipse.aether" name="aether-transport-file" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<caller organisation="org.eclipse.aether" name="aether-transport-http" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<caller organisation="org.eclipse.aether" name="aether-connector-basic" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<caller organisation="org.eclipse.aether" name="aether-impl" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<caller organisation="org.eclipse.aether" name="aether-transport-wagon" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<artifacts>
+					<artifact name="aether-spi" type="jar" ext="jar" status="successful" details="" size="31827" time="1027" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-spi/jars/aether-spi-0.9.0.v20140226.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-spi/0.9.0.v20140226/aether-spi-0.9.0.v20140226.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.aether" name="aether-api">
+			<revision name="0.9.0.v20140226" status="release" pubdate="20140227040252" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="1896" time="712" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-api/ivy-0.9.0.v20140226.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-api/ivy-0.9.0.v20140226.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-api/0.9.0.v20140226/aether-api-0.9.0.v20140226.pom"/>
+				<caller organisation="org.eclipse.aether" name="aether-spi" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<caller organisation="org.eclipse.aether" name="aether-transport-file" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<caller organisation="org.eclipse.aether" name="aether-transport-http" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<caller organisation="org.eclipse.aether" name="aether-util" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<caller organisation="org.eclipse.aether" name="aether-connector-basic" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<caller organisation="org.eclipse.aether" name="aether-impl" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<caller organisation="org.eclipse.aether" name="aether-transport-wagon" conf="compile, runtime" rev="0.9.0.v20140226" rev-constraint-default="0.9.0.v20140226" rev-constraint-dynamic="0.9.0.v20140226" callerrev="0.9.0.v20140226"/>
+				<artifacts>
+					<artifact name="aether-api" type="jar" ext="jar" status="successful" details="" size="136289" time="1379" location="/Users/taw/.ivy2/cache/org.eclipse.aether/aether-api/jars/aether-api-0.9.0.v20140226.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/aether/aether-api/0.9.0.v20140226/aether-api-0.9.0.v20140226.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven" name="maven-aether-provider">
+			<revision name="3.2.1" status="release" pubdate="20140215013744" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="4094" time="712" location="/Users/taw/.ivy2/cache/org.apache.maven/maven-aether-provider/ivy-3.2.1.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.apache.maven/maven-aether-provider/ivy-3.2.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/maven/maven-aether-provider/3.2.1/maven-aether-provider-3.2.1.pom"/>
+				<caller organisation="no.arktekk.sbt" name="aether-deploy" conf="default, compile, runtime, master" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="0.13"/>
+				<artifacts>
+					<artifact name="maven-aether-provider" type="jar" ext="jar" status="successful" details="" size="61357" time="869" location="/Users/taw/.ivy2/cache/org.apache.maven/maven-aether-provider/jars/maven-aether-provider-3.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/maven/maven-aether-provider/3.2.1/maven-aether-provider-3.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven" name="maven-repository-metadata">
+			<revision name="3.2.1" status="release" pubdate="20140215013720" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2229" time="722" location="/Users/taw/.ivy2/cache/org.apache.maven/maven-repository-metadata/ivy-3.2.1.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.apache.maven/maven-repository-metadata/ivy-3.2.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/maven/maven-repository-metadata/3.2.1/maven-repository-metadata-3.2.1.pom"/>
+				<caller organisation="no.arktekk.sbt" name="aether-deploy" conf="default, compile, runtime, master" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="0.13"/>
+				<artifacts>
+					<artifact name="maven-repository-metadata" type="jar" ext="jar" status="successful" details="" size="25758" time="700" location="/Users/taw/.ivy2/cache/org.apache.maven/maven-repository-metadata/jars/maven-repository-metadata-3.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/maven/maven-repository-metadata/3.2.1/maven-repository-metadata-3.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven" name="maven-model-builder">
+			<revision name="3.2.1" status="release" pubdate="20140215013642" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2809" time="714" location="/Users/taw/.ivy2/cache/org.apache.maven/maven-model-builder/ivy-3.2.1.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.apache.maven/maven-model-builder/ivy-3.2.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/maven/maven-model-builder/3.2.1/maven-model-builder-3.2.1.pom"/>
+				<caller organisation="no.arktekk.sbt" name="aether-deploy" conf="default, compile, runtime, master" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="0.13"/>
+				<artifacts>
+					<artifact name="maven-model-builder" type="jar" ext="jar" status="successful" details="" size="165103" time="1544" location="/Users/taw/.ivy2/cache/org.apache.maven/maven-model-builder/jars/maven-model-builder-3.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/maven/maven-model-builder/3.2.1/maven-model-builder-3.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-interpolation">
+			<revision name="1.19" status="release" pubdate="20130807035710" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1029" time="714" location="/Users/taw/.ivy2/cache/org.codehaus.plexus/plexus-interpolation/ivy-1.19.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.codehaus.plexus/plexus-interpolation/ivy-1.19.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.pom"/>
+				<caller organisation="no.arktekk.sbt" name="aether-deploy" conf="default, compile, runtime, master" rev="1.19" rev-constraint-default="1.19" rev-constraint-dynamic="1.19" callerrev="0.13"/>
+				<artifacts>
+					<artifact name="plexus-interpolation" type="jar" ext="jar" status="successful" details="" size="61697" time="1028" location="/Users/taw/.ivy2/cache/org.codehaus.plexus/plexus-interpolation/jars/plexus-interpolation-1.19.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven" name="maven-model">
+			<revision name="3.2.1" status="release" pubdate="20140215013543" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="4141" time="1092" location="/Users/taw/.ivy2/cache/org.apache.maven/maven-model/ivy-3.2.1.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.apache.maven/maven-model/ivy-3.2.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/maven/maven-model/3.2.1/maven-model-3.2.1.pom"/>
+				<caller organisation="no.arktekk.sbt" name="aether-deploy" conf="default, compile, runtime, master" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="0.13"/>
+				<artifacts>
+					<artifact name="maven-model" type="jar" ext="jar" status="successful" details="" size="159855" time="1879" location="/Users/taw/.ivy2/cache/org.apache.maven/maven-model/jars/maven-model-3.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/maven/maven-model/3.2.1/maven-model-3.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-utils">
+			<revision name="3.0.17" status="release" pubdate="20140127231020" resolver="public" artresolver="public" homepage="http://plexus.codehaus.org/plexus-utils" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="3395" time="887" location="/Users/taw/.ivy2/cache/org.codehaus.plexus/plexus-utils/ivy-3.0.17.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.codehaus.plexus/plexus-utils/ivy-3.0.17.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0.17/plexus-utils-3.0.17.pom"/>
+				<caller organisation="org.apache.maven.wagon" name="wagon-provider-api" conf="compile, runtime" rev="1.4.2" rev-constraint-default="1.4.2" rev-constraint-dynamic="1.4.2" callerrev="1.0"/>
+				<caller organisation="org.apache.maven" name="maven-model" conf="compile, runtime" rev="3.0.17" rev-constraint-default="3.0.17" rev-constraint-dynamic="3.0.17" callerrev="3.2.1"/>
+				<artifacts>
+					<artifact name="plexus-utils" type="jar" ext="jar" status="successful" details="" size="251792" time="2059" location="/Users/taw/.ivy2/cache/org.codehaus.plexus/plexus-utils/jars/plexus-utils-3.0.17.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0.17/plexus-utils-3.0.17.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.4.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="3.0.17"/>
+				<caller organisation="org.apache.maven.wagon" name="wagon-provider-api" conf="compile, runtime" rev="1.4.2" rev-constraint-default="1.4.2" rev-constraint-dynamic="1.4.2" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.6" status="release" pubdate="20150918173528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.6/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2487" time="0" location="/Users/taw/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.6/scala-library-2.10.6.pom"/>
+				<caller organisation="org.scalaz" name="scalaz-effect_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.1" callerrev="7.0.2"/>
+				<caller organisation="org.scalaz" name="scalaz-core_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.1" callerrev="7.0.2"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7132001" time="0" location="/Users/taw/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.6.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.sbteclipse" name="sbteclipse-plugin">
+			<revision name="2.4.0" status="release" pubdate="20131018194249" resolver="typesafe-ivy-releases" artresolver="typesafe-ivy-releases" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="1">
+				<metadata-artifact status="successful" details="" size="1434" time="3848" location="/Users/taw/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbteclipse/sbteclipse-plugin/ivy-2.4.0.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbteclipse/sbteclipse-plugin/ivy-2.4.0.xml.original" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/2.4.0/ivys/ivy.xml"/>
+				<caller organisation="default" name="test-build" conf="compile" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbteclipse-plugin" type="jar" ext="jar" status="successful" details="" size="8222" time="5599" location="/Users/taw/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbteclipse/sbteclipse-plugin/jars/sbteclipse-plugin-2.4.0.jar">
+						<origin-location is-local="false" location="https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/2.4.0/jars/sbteclipse-plugin.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.sbteclipse" name="sbteclipse-core">
+			<revision name="2.4.0" status="release" pubdate="20131018194246" resolver="typesafe-ivy-releases" artresolver="typesafe-ivy-releases" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="2">
+				<metadata-artifact status="successful" details="" size="1478" time="3794" location="/Users/taw/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbteclipse/sbteclipse-core/ivy-2.4.0.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbteclipse/sbteclipse-core/ivy-2.4.0.xml.original" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-core/scala_2.10/sbt_0.13/2.4.0/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.sbteclipse" name="sbteclipse-plugin" conf="compile" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="2.4.0" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbteclipse-core" type="jar" ext="jar" status="successful" details="" size="267233" time="8292" location="/Users/taw/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbteclipse/sbteclipse-core/jars/sbteclipse-core-2.4.0.jar">
+						<origin-location is-local="false" location="https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-core/scala_2.10/sbt_0.13/2.4.0/jars/sbteclipse-core.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-effect_2.10">
+			<revision name="7.0.2" status="release" pubdate="20130707203131" resolver="public" artresolver="public" homepage="http://scalaz.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="successful" details="" size="3018" time="716" location="/Users/taw/.ivy2/cache/org.scalaz/scalaz-effect_2.10/ivy-7.0.2.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.scalaz/scalaz-effect_2.10/ivy-7.0.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.0.2/scalaz-effect_2.10-7.0.2.pom"/>
+				<caller organisation="com.typesafe.sbteclipse" name="sbteclipse-core" conf="compile" rev="7.0.2" rev-constraint-default="7.0.2" rev-constraint-dynamic="7.0.2" callerrev="2.4.0"/>
+				<artifacts>
+					<artifact name="scalaz-effect_2.10" type="bundle" ext="jar" status="successful" details="" size="429615" time="2740" location="/Users/taw/.ivy2/cache/org.scalaz/scalaz-effect_2.10/bundles/scalaz-effect_2.10-7.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.0.2/scalaz-effect_2.10-7.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-core_2.10">
+			<revision name="7.0.2" status="release" pubdate="20130707203202" resolver="public" artresolver="public" homepage="http://scalaz.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="3">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="successful" details="" size="2836" time="714" location="/Users/taw/.ivy2/cache/org.scalaz/scalaz-core_2.10/ivy-7.0.2.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/org.scalaz/scalaz-core_2.10/ivy-7.0.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.2/scalaz-core_2.10-7.0.2.pom"/>
+				<caller organisation="org.scalaz" name="scalaz-effect_2.10" conf="default, compile, runtime, master" rev="7.0.2" rev-constraint-default="7.0.2" rev-constraint-dynamic="7.0.2" callerrev="7.0.2"/>
+				<caller organisation="com.typesafe.sbteclipse" name="sbteclipse-core" conf="compile" rev="7.0.2" rev-constraint-default="7.0.2" rev-constraint-dynamic="7.0.2" callerrev="2.4.0"/>
+				<artifacts>
+					<artifact name="scalaz-core_2.10" type="bundle" ext="jar" status="successful" details="" size="8596592" time="41429" location="/Users/taw/.ivy2/cache/org.scalaz/scalaz-core_2.10/bundles/scalaz-core_2.10-7.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.2/scalaz-core_2.10-7.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.eed3si9n" name="sbt-assembly">
+			<revision name="0.11.2" status="release" pubdate="20140319165202" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="0">
+				<license name="MIT License" url="https://github.com/sbt/sbt-assembly/blob/master/LICENSE"/>
+				<metadata-artifact status="successful" details="" size="1564" time="3820" location="/Users/taw/.ivy2/cache/scala_2.10/sbt_0.13/com.eed3si9n/sbt-assembly/ivy-0.11.2.xml" searched="true" original-local-location="/Users/taw/.ivy2/cache/scala_2.10/sbt_0.13/com.eed3si9n/sbt-assembly/ivy-0.11.2.xml.original" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.10/sbt_0.13/0.11.2/ivys/ivy.xml"/>
+				<caller organisation="default" name="test-build" conf="compile" rev="0.11.2" rev-constraint-default="0.11.2" rev-constraint-dynamic="0.11.2" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-assembly" type="jar" ext="jar" status="successful" details="" size="153282" time="5435" location="/Users/taw/.ivy2/cache/scala_2.10/sbt_0.13/com.eed3si9n/sbt-assembly/jars/sbt-assembly-0.11.2.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.10/sbt_0.13/0.11.2/jars/sbt-assembly.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

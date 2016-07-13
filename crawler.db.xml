@@ -1,0 +1,56 @@
+<connectors>
+  <!-- <connector name="dblocalhost1">
+    <property name="driver">com.mysql.jdbc.Driver</property>
+    <property name="url">jdbc:mysql://localhost:3306/wish</property>
+    <property name="username">root</property>
+    <property name="password">123456</property>
+    <property name="ddlAutoRun">false</property>
+    <property name="maxThreads">30</property>
+    <property name="entities">wish4.ModelWishMerchant</property>
+  </connector>
+  <connector name="dblocalhost2">
+    <property name="driver">com.mysql.jdbc.Driver</property>
+    <property name="url">jdbc:mysql://localhost:3306/wish</property>
+    <property name="username">root</property>
+    <property name="password">123456</property>
+    <property name="ddlAutoRun">false</property>
+    <property name="maxThreads">30</property>
+    <property name="entities">wish4.ModelWishSellerIn</property>
+  </connector> -->
+  <connector name="db_amazon">
+    <property name="driver">com.mysql.jdbc.Driver</property>
+    <property name="url">jdbc:mysql://192.168.99.100:3306/amazon</property>
+    <property name="username">root</property>
+    <property name="password">123456</property>
+    <property name="ddlAutoRun">false</property>
+    <property name="maxThreads">30</property>
+    <property name="entities">com.yks.amazoncategory.AmazonCategoryModel</property>
+  </connector>
+  <connector name="db_amazon_top100">
+    <property name="driver">com.mysql.jdbc.Driver</property>
+    <property name="url">jdbc:mysql://192.168.99.100:3306/amazon</property>
+    <property name="username">root</property>
+    <property name="password">123456</property>
+    <property name="ddlAutoRun">false</property>
+    <property name="maxThreads">30</property>
+    <property name="entities">com.yks.amazontop100.Amazontop100Model</property>
+  </connector>
+  
+  <!--线程控制  -->
+  <!-- <connector name="dblocalhost4">
+    <property name="driver">com.mysql.jdbc.Driver</property>
+    <property name="url">jdbc:mysql://localhost:3306/wish</property>
+    <property name="username">root</property>
+    <property name="password">123456</property>
+    <property name="ddlAutoRun">false</property>
+    <property name="maxThreads">30</property>
+    <property name="entities">wish4.ModelWishThreadNum</property>
+  </connector> -->
+  
+</connectors>
+
+
+
+
+
+

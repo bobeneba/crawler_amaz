@@ -1,0 +1,13 @@
+in表中需要
+id  
+two_kind_url
+two_kind_id
+all_item_num
+act_status
+begin_time
+end_time
+
+
+导出到shopee_allstore_my_in表
+create table shopee_allstore_my_in SELECT `id`, `first_kind`,`two_kind`, `two_kind_url`, `two_kind_id`,`all_item_num`,`act_status`, `begin_time`, `end_time`,
+'begin_time','end_time', 'act_status'  FROM `shopee_kind_my_out`

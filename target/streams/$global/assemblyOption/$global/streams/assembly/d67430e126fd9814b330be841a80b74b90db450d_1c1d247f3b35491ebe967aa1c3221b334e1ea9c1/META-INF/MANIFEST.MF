@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Vendor: yks.be.datamagic
+Implementation-Title: spider-man
+Implementation-Version: 1.0.0-SNAPSHOT
+Implementation-Vendor-Id: yks.be.datamagic
+Specification-Vendor: yks.be.datamagic
+Specification-Title: spider-man
+Specification-Version: 1.0.0-SNAPSHOT
+Main-Class: spider.man.io.db
+

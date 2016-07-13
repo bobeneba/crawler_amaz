@@ -1,0 +1,2 @@
+导数据shopee_storedetail_my_in
+create table shopee_storedetail_my_in select  `id`,`store_url`,`country`,`act_status`,`begin_time`,`end_time` from shopee_allstore_my_out group by `store_id`
